@@ -1,0 +1,187 @@
+# TP Git & Github
+
+Ce TP fait suite à un cours théorique qui présente Git et Github.
+Les slides sont disponible ici : 
+TODO : Insérer lien
+
+
+## 1. Installer et configurer git
+
+### Installation
+
+Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation.
+
+Attention, si vous êtes sous windows, installez la version bash de git. Choisissez l'option "Checkout Windows-style, commit Unix-style" à l'écran suivant.
+
+### Configuration
+
+La toute première chose à faire est de configurer l'auteur, donc vous, votre nom et votre adresse email.
+Dans votre terminal (ou git bash), tapez :
+
+	git config --global user.name "Prénom Nom"
+
+	git config --global user.email "monemail@fournisseur.com"
+
+	git config --global color.ui true
+
+Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
+
+## 2. Initiatlisation du dépôt
+
+Nous sommes prêt à travailler, il est temps d'initialiser un nouveau dépôt et de travailler sur nos fichier. Nous allons ici créer un clone de flappy bird en javascript.
+
+Créez un nouveau répertoire (nomez le "flappy_clone" si vous n'avez pas d'inspiration), placez vous dedans avec le terminal, puis tapez :
+
+	git init
+
+Votre dépôt est initialisé mais bien vide, nous allons ajouter un peu de contenu.
+
+## 3. Premiers commits
+
+Commencez par ajouter un fichier index.html, puis tapez :
+	
+	git status
+
+Vous aurez un aperçu de la situation, git nous dit que nous avons un fichier non suivi. Nous allons alors l'ajouter avec :
+
+	git add index.html
+
+Un nouveau status vous montrera que le fichier est désormais validé (et donc suivi).
+
+Nous allons maintenant faire un instantané ou "commit" de ces modifications avec :
+
+	git commit -m "Init + added empty index.html file"
+
+Préférez rédiger vos messages de commit en anglais.
+
+Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Collez le code suivant dans le fichier index.html :
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Flappy Clone</title>
+    </head>
+    <body>
+      <p>Appuyer sur la barre espace pour sauter</p>
+      <div id="game"></div>
+    </body>
+    </html>
+   
+Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur, que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
+
+On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
+On peut maintenant essayer de taper :
+	
+	git diff
+
+On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
+
+Sauvegardons nos modifications avec un nouveau commit, essayez d'être précis dans votre message. Et n'oubliez pas que le fichier index.html est déjà suivi, donc inutile de faire un git add si vous passez l'option -a lors du commit : git commit -am "mon message".
+
+Il manque deux choses à notre jeu pour qu'il fonctionne : un fichier de librairie et un fichier qui contient notre jeu.
+
+Nous allons d'abord ajouter la librairie, pour ce faire, coller la ligne suivante juste après la ligne qui contient la balise <title> :
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.1.1/phaser.min.js"></script>
+
+Après un status, voir un diff, faites un commit, toujours en s'appliquant sur le message. Il faut qu'on comprenne quelle a été la modification apportée.
+
+Nous allons maintenant ajouter le code javascript qui contient notre jeu.
+
+Insérez la balise suivante après la balise script que nous venons d'insérer :
+
+	<script src="game.js"></script>
+
+Créez aussi un fichier à côté de index.html qui s'appellera game.js
+
+Tapez ensuite :
+	
+	git commit -am "Added game file"
+
+En faisant un git status, vous vous appercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
+Nous avons deux choix, soit faire un nouveau commit qui ajoute le fichier game.js, ou utiliser l'option --amend qui permet d'ajouter un fichier suivi au commit précédent. Pour la deuxième solution, ajouter le fichier game.js à l'index, puis tapez :
+
+	git commit --amend
+
+Git lancera votre éditeur de texte pour que vous puissiez corriger le message de commit si nécessaire.
+
+Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante :
+
+	https://gist.github.com/volpeo/479af6400b6d8207affc
+
+Copiez le code et collez-le dans game.js.
+Testez le fichier index.html dans un navigateur.
+
+Notre jeu est fonctionnel, commitez les modifications.
+
+Nous pouvons observer l'historique des commits avec :
+	
+	git log
+
+## 4. Branches
+
+Nous décidons maintenant d'ajouter une fonctionnalité à notre jeu. Le saut du carré jaune représentant l'oiseau n'est pas très réaliste, nous allons ajouter quelques lignes qui vont améliorer ça.
+Cependant, nous ne voulons pas créer cette fonctionnalité sur la branche master, pour ne pas la polluer, mais plutôt sur une nouvelle branche.
+
+Créez une nouvelle branche nomée jump en tapant :
+
+	git branch jump
+
+La nouvelle branche est créée, on peut le vérifier en tapant :
+
+	git branch
+
+La branche courrante est celle qui est précédée d'une étoile. Pour changer de branche, tapez :
+
+	git checkout jump
+
+Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous pouvons effectuer nos modifications tranquillement.
+
+Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
+
+		if (this.bird.angle < 20)
+            		this.bird.angle += 1; 
+
+
+Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
+
+	game.add.tween(this.bird).to({angle: -20}, 100).start();
+
+Testez dans votre navigateur la nouvelle animation pour le saut.
+
+Une fois que vous êtes satisfait de votre code et que vous êtes sûr de n'avoir rien cassé, commitez les changements.
+
+Nous nous retrouvons ici avec une branche qui contient une fonctionnalité, et la branche principale (master) qui n'en profite pas. Maintenant que nous sommes sûr que la fonctionnalité marche, nous pouvons la rappatrier sur la branche principale (master).
+
+Avant de changer de branche, faite un git log pour observer votre historique, constatez que votre dernier commit conscerne l'animation du saut.
+
+Changez de branche pour la branche principale, et inspectez à nouveau votre historique, ici le commit de l'animation du saut n'est pas présent.
+
+Fusionnez alors la branche jump vers la branche master en tapant :
+
+	git merge jump
+
+Un nouveau git log nous montrera le dernier commit qu'il nous manquait, maintenant présent sur la branche master.
+
+
+## 5. Branche et fusion avec conflit
+
+Nous décidons d'essayer le jeu avec une nouvelle coueur de fond.
+Créez une nouvelle branche nommée "background", positionnez vous dessus et éditez le fichier game.js.
+
+Cherchez dans les premières ligne, juste après le début de la fonction preload, la ligne contenant "game.stage.backgroundColor", et modifier la valeur de "#71c5cf" en "#FF6A5E"
+
+Observez les changements dans le navigateur (le fond doit être rouge) et commitez vos changements.
+
+Repassez sur la branche master, observez que le fond est redevenu bleu.
+
+Le but de cette partie est de créer un conflit, ce que nous allons faire n'est donc pas très logique.
+
+Sur la branche master, éditez le code couleur en "#D0FFC2", vérifiez dans votre navigateur et commitez les changements.
+
+Fusionnez la branche background avec le master. Git devrait vous signaler un conflit, un git status nous le confirme.
+
+Éditez game.js, observez les lignes que git a mis en place pour vous signaler la position du conflit. Supprimez les une fois que vous avez fait un choix entre les deux propositions.
+
+Commitez les changements en signalant le merge dans le message du commit.
