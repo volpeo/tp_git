@@ -165,7 +165,7 @@ Un nouveau git log nous montrera le dernier commit qu'il nous manquait, maintena
 
 ## 5. Branche et fusion avec conflit
 
-Nous décidons d'essayer le jeu avec une nouvelle coueur de fond.
+Nous décidons d'essayer le jeu avec une nouvelle couleur de fond.
 Créez une nouvelle branche nommée "background", positionnez vous dessus et éditez le fichier game.js.
 
 Cherchez dans les premières ligne, juste après le début de la fonction preload, la ligne contenant "game.stage.backgroundColor", et modifier la valeur de "#71c5cf" en "#FF6A5E"
