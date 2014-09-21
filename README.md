@@ -1,7 +1,7 @@
 # TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
-Les slides sont disponible ici : 
+Les slides sont disponible ici :
 TODO : Insérer lien
 
 
@@ -39,7 +39,7 @@ Votre dépôt est initialisé mais bien vide, nous allons ajouter un peu de cont
 ## 3. Premiers commits
 
 Commencez par ajouter un fichier index.html, puis tapez :
-	
+
 	git status
 
 Vous aurez un aperçu de la situation, git nous dit que nous avons un fichier non suivi. Nous allons alors l'ajouter avec :
@@ -67,12 +67,12 @@ Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Co
       <div id="game"></div>
     </body>
     </html>
-   
+
 Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur, que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
 
 On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
 On peut maintenant essayer de taper :
-	
+
 	git diff
 
 On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
@@ -96,7 +96,7 @@ Insérez la balise suivante après la balise script que nous venons d'insérer :
 Créez aussi un fichier à côté de index.html qui s'appellera game.js
 
 Tapez ensuite :
-	
+
 	git commit -am "Added game file"
 
 En faisant un git status, vous vous appercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
@@ -114,7 +114,7 @@ Testez le fichier index.html dans un navigateur.
 Notre jeu est fonctionnel, commitez les modifications.
 
 Nous pouvons observer l'historique des commits avec :
-	
+
 	git log
 
 ## 4. Branches
@@ -139,7 +139,7 @@ Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous po
 Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
 
 		if (this.bird.angle < 20)
-            		this.bird.angle += 1; 
+            		this.bird.angle += 1;
 
 
 Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
@@ -184,3 +184,6 @@ Fusionnez la branche background avec le master. Git devrait vous signaler un con
 Il faut supprimer les lignes entières contenant "<<<<<<<<<<<<< HEAD" le séparateur des deux versions "=================", la ligne ">>>>>>>>>>>>>> background", ainsi que l'une des deux lignes en conflit dans notre cas (car il se peut que dans le conflit, on garde les lignes des 2 commits).
 
 Commitez les changements en signalant le merge dans le message du commit.
+
+Antoine CASSOL
+https://github.com/sheebypanda
