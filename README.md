@@ -81,7 +81,7 @@ Sauvegardons nos modifications avec un nouveau commit, essayez d'être précis d
 
 Il manque deux choses à notre jeu pour qu'il fonctionne : un fichier de librairie et un fichier qui contient notre jeu.
 
-Nous allons d'abord ajouter la librairie, pour ce faire, coller la ligne suivante juste après la ligne qui contient la balise <title> :
+Nous allons d'abord ajouter la librairie, pour ce faire, coller la ligne suivante juste après la ligne qui contient la balise \<title\> :
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.1.1/phaser.min.js"></script>
 
