@@ -9,7 +9,7 @@ TODO : Insérer lien
 
 ### Installation
 
-Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation.
+Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation. http://git-scm.com/
 
 Attention, si vous êtes sous windows, installez la version bash de git. Choisissez l'option "Checkout Windows-style, commit Unix-style" à l'écran suivant.
 
