@@ -181,5 +181,6 @@ Sur la branche master, éditez le code couleur en "#D0FFC2", vérifiez dans votr
 Fusionnez la branche background avec le master. Git devrait vous signaler un conflit, un git status nous le confirme.
 
 Éditez game.js, observez les lignes que git a mis en place pour vous signaler la position du conflit. Supprimez les une fois que vous avez fait un choix entre les deux propositions.
+Il faut supprimer les lignes entières contenant "<<<<<<<<<<<<< HEAD" le séparateur des deux versions "=================", la ligne ">>>>>>>>>>>>>> background", ainsi que l'une des deux lignes en conflit dans notre cas (car il se peut que dans le conflit, on garde les lignes des 2 commits).
 
 Commitez les changements en signalant le merge dans le message du commit.
