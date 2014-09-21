@@ -186,3 +186,4 @@ Il faut supprimer les lignes entières contenant "<<<<<<<<<<<<< HEAD" le sépara
 Commitez les changements en signalant le merge dans le message du commit.
 
 Antoine CASSOL
+https://github.com/sheebypanda
