@@ -106,9 +106,7 @@ Nous avons deux choix, soit faire un nouveau commit qui ajoute le fichier game.j
 
 Git lancera votre éditeur de texte pour que vous puissiez corriger le message de commit si nécessaire.
 
-Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante :
-
-	https://gist.github.com/volpeo/479af6400b6d8207affc
+Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante  https://gist.github.com/volpeo/479af6400b6d8207affc
 
 Copiez le code et collez-le dans game.js.
 Testez le fichier index.html dans un navigateur.
