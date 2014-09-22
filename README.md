@@ -1,8 +1,7 @@
 # TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
-Les slides sont disponible ici : 
-TODO : Insérer lien
+Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-git
 
 
 ## 1. Installer et configurer git
@@ -184,3 +183,40 @@ Fusionnez la branche background avec le master. Git devrait vous signaler un con
 Il faut supprimer les lignes entières contenant "<<<<<<<<<<<<< HEAD" le séparateur des deux versions "=================", la ligne ">>>>>>>>>>>>>> background", ainsi que l'une des deux lignes en conflit dans notre cas (car il se peut que dans le conflit, on garde les lignes des 2 commits).
 
 Commitez les changements en signalant le merge dans le message du commit.
+
+## 6. Remote et Github
+
+Nous allons maintenant travailler avec un dépôt distant, histoire de montrer au monde entier notre code, nous choisissons de le mettre sur GitHub.
+
+Créez un compte et créer un nouveau dépôt nommé "flappy_clone". Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
+
+	git remote add origin <adresse du dépot en https>
+	
+	git push -u origin master
+
+Votre projet se trouve maintenant sur github, vous pouvez rafraîchir la page pour observer les résultats.
+
+## 7. Fork et pull request
+
+Maintenant que votre projet est en ligne, on va contribuer à un projet. "Forkez" le projet tp_git, il devrait ensuite se trouver dans votre compte GitHub. Récupérez le grâce à la commande git clone (l'adresse pour récupérer le dépôt se trouve sur la droite, choisissez le mode https). N'oubliez pas de vous placer dans un autre répertoire que flappy_clone pour cloner le dépôt. La commande git clone créé elle même un répertoire et y place le code à l'intérieur.
+
+Une fois le dépôt téléchargé sur votre machine, vous avez accès à l'historique (et donc vous verrez mes différents commits qui suivent l'évolution de ce document, mes fautes de frappes corrigées, etc.).
+
+Éditez le README.md, et ajouter y votre nom et prénom ainsi que l'url de votre compte GitHub en suivant le modèle établi (Si vous avez trouvé des fautes d'orthographe dans ce tutoriel, n'hésitez pas à les corriger).
+
+Commitez le tout et envoyer le code vers le dépôt distant.
+
+Observez vos changements sur la page du dépôt sur GitHub, ces changements sont uniquement dans votre dépôt et pas dans mon dépôt qui est pourtant l'original.
+
+Le but ici est de proposer vos modifications à mon projet original, pour se faire, sur la page du projet tp_git, cliquez sur le bouton de "pull request", vous ne pouvez pas le manquer il est à gauche et vert.
+
+![Bouton Pull Request](https://dl.dropboxusercontent.com/u/586198/pull-request.png)
+
+Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez comme modification.
+
+Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
+
+
+## 8. Élèves ayant validé ce cours d'initiation
+
+Sylvain Peigney - https://github.com/volpeo
