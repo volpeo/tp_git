@@ -3,6 +3,27 @@
 Ce TP fait suite à un cours théorique qui présente Git et Github.
 Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-git
 
+## 0. Quelques pré requis 
+
+#### Quelques commandes pratiques sur bash : 
+
+	pwd : affiche le chemin courant
+	ls : lister les fichiers et répertoires dans le répertoire courant
+	cd <repertoire>: change de répertoire pour celui demandé
+	touch <nom-du-fichier> : créé le fichier (vide)
+	mkdir <nom-du-repertoire> : créé le répertoire
+
+#### Sous VIM (éditeur de texte) :
+
+Il existe 2 modes dans cet éditeur : 
+- Le mode insertion, accessible en appuyant la touche i quand on est en mode commande. Ce mode permet de taper du texte.
+- Le mode commande, pour y accéder, il faut appuyer sur la touche échap. On peut ensuite taper quelques commandes :
+
+		:q pour quitter
+		:w pour enregistrer
+		:x pour enregistrer puis quitter
+
+Notez qu'on peut rajouter un point d'exclamation à la suite de la commande pour forcer celle-ci (par exemple quitter un fichier qu'on aurait modifié sans l'enregistrer).
 
 ## 1. Installer et configurer git
 
@@ -188,7 +209,7 @@ Commitez les changements en signalant le merge dans le message du commit.
 
 Nous allons maintenant travailler avec un dépôt distant, histoire de montrer au monde entier notre code, nous choisissons de le mettre sur GitHub.
 
-Créez un compte et créer un nouveau dépôt nommé "flappy_clone". Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
+Créez un compte et créer un nouveau dépôt nommé "flappy_clone" (créez ce dépôt sans Readme !!). Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
 
 	git remote add origin <adresse du dépot en https>
 	
