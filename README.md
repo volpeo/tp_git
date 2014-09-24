@@ -3,7 +3,7 @@
 Ce TP fait suite à un cours théorique qui présente Git et Github.
 Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-git
 
-## 0. Quelques pré requis 
+## 0. Quelques pré-requis 
 
 #### Quelques commandes pratiques sur bash : 
 
@@ -241,3 +241,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 ## 8. Élèves ayant validé ce cours d'initiation
 
 Sylvain Peigney - https://github.com/volpeo
+Léa Deschamps - https://github.com/leadscp
