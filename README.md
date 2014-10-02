@@ -38,9 +38,9 @@ Attention, si vous êtes sous windows, installez la version bash de git. Choisis
 La toute première chose à faire est de configurer l'auteur, donc vous, votre nom et votre adresse email.
 Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
 
-	git config --global user.name "Prénom Nom"
+	git config --global user.name "Jérémie Lecornu"
 
-	git config --global user.email "monemail@fournisseur.com"
+	git config --global user.email "hubert.girondiac@gmail.com"
 
 	git config --global color.ui true
 
