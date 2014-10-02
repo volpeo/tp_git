@@ -5,7 +5,7 @@ Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-g
 
 ## 0. Quelques pré requis 
 
-#### Quelques commandes pratiques sur bash : 
+#### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention.
 
 	pwd : affiche le chemin courant
 	ls : lister les fichiers et répertoires dans le répertoire courant
@@ -13,7 +13,7 @@ Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-g
 	touch <nom-du-fichier> : créé le fichier (vide)
 	mkdir <nom-du-repertoire> : créé le répertoire
 
-#### Sous VIM (éditeur de texte) :
+#### Sous VIM (éditeur de texte), vous en aurez aussi besoin lors du TP, lisez bien :
 
 Il existe 2 modes dans cet éditeur : 
 - Le mode insertion, accessible en appuyant la touche i quand on est en mode commande. Ce mode permet de taper du texte.
@@ -31,12 +31,12 @@ Notez qu'on peut rajouter un point d'exclamation à la suite de la commande pour
 
 Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation. http://git-scm.com/
 
-Attention, si vous êtes sous windows, installez la version bash de git. Choisissez l'option "Checkout Windows-style, commit Unix-style" à l'écran suivant.
+Attention, si vous êtes sous windows, installez la version bash de git. Choisissez l'option "Checkout Windows-style, commit Unix-style" à l'écran suivant (toutes les options par défaut).
 
 ### Configuration
 
 La toute première chose à faire est de configurer l'auteur, donc vous, votre nom et votre adresse email.
-Dans votre terminal (ou git bash), tapez :
+Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
 
 	git config --global user.name "Prénom Nom"
 
@@ -45,20 +45,24 @@ Dans votre terminal (ou git bash), tapez :
 	git config --global color.ui true
 
 Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
+On peut vérifier que tout c'est bien passé en tapant :
+
+	cat ~/.gitconfig
 
 ## 2. Initiatlisation du dépôt
 
 Nous sommes prêt à travailler, il est temps d'initialiser un nouveau dépôt et de travailler sur nos fichier. Nous allons ici créer un clone de flappy bird en javascript.
 
-Créez un nouveau répertoire (nomez le "flappy_clone" si vous n'avez pas d'inspiration), placez vous dedans avec le terminal, puis tapez :
+Créez un nouveau répertoire (nomez le "flappy_clone" si vous n'avez pas d'inspiration), **placez vous dedans avec le terminal**, puis tapez :
 
 	git init
 
 Votre dépôt est initialisé mais bien vide, nous allons ajouter un peu de contenu.
+Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'est que vous vous êtes trompé quelque part et que vous allez partager tous vos fichiers personels sur internet.
 
 ## 3. Premiers commits
 
-Commencez par ajouter un fichier index.html, puis tapez :
+Commencez par créer un fichier nommé index.html, puis tapez :
 	
 	git status
 
@@ -74,7 +78,7 @@ Nous allons maintenant faire un instantané ou "commit" de ces modifications ave
 
 Préférez rédiger vos messages de commit en anglais.
 
-Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Collez le code suivant dans le fichier index.html :
+Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Collez le code suivant dans le fichier index.html avec votre éditeur de code préféré (utilisez notepad++ ou sublime text si vous n'en avez aucun installé sur votre machine, pas de textedit !) :
 
     <!DOCTYPE html>
     <html>
@@ -88,7 +92,7 @@ Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Co
     </body>
     </html>
    
-Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur, que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
+Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur (clic droit, ouvrir avec...), que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
 
 On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
 On peut maintenant essayer de taper :
@@ -97,7 +101,7 @@ On peut maintenant essayer de taper :
 
 On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
 
-Sauvegardons nos modifications avec un nouveau commit, essayez d'être précis dans votre message. Et n'oubliez pas que le fichier index.html est déjà suivi, donc inutile de faire un git add si vous passez l'option -a lors du commit : git commit -am "mon message".
+Ajoutons nos modifications à notre dépôt avec un nouveau commit, essayez d'être précis dans votre message. Et n'oubliez pas que le fichier index.html est déjà suivi, donc inutile de faire un git add si vous passez l'option -a lors du commit : git commit -am "mon message".
 
 Il manque deux choses à notre jeu pour qu'il fonctionne : un fichier de librairie et un fichier qui contient notre jeu.
 
