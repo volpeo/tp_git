@@ -245,3 +245,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 ## 8. Élèves ayant validé ce cours d'initiation
 
 Sylvain Peigney - https://github.com/volpeo
+Mussard Lo�c - https://github.com/Archloy
