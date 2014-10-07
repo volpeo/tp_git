@@ -239,9 +239,11 @@ Le but ici est de proposer vos modifications à mon projet original, pour se fai
 
 Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez comme modification.
 
-Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
+Une fois réalisée, vous pouvez observer sur le projet original toutes les propositions de pull request, et leur état.
 
 
 ## 8. Élèves ayant validé ce cours d'initiation
 
 Sylvain Peigney - https://github.com/volpeo
+Elisa Collot - https://github.com/ElisaC
+
