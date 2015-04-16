@@ -229,7 +229,7 @@ Une fois le dépôt téléchargé sur votre machine, vous avez accès à l'histo
 
 Éditez le README.md, et ajouter y votre nom et prénom ainsi que l'url de votre compte GitHub en suivant le modèle établi (Si vous avez trouvé des fautes d'orthographe dans ce tutoriel, n'hésitez pas à les corriger).
 
-Commitez le tout et envoyer le code vers le dépôt distant.
+Commitez le tout et envoyez le code vers le dépôt distant.
 
 Observez vos changements sur la page du dépôt sur GitHub, ces changements sont uniquement dans votre dépôt et pas dans mon dépôt qui est pourtant l'original.
 
