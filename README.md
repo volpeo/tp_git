@@ -1,4 +1,4 @@
-# TP Git & Github
+﻿# TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
 Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-git
@@ -229,7 +229,7 @@ Une fois le dépôt téléchargé sur votre machine, vous avez accès à l'histo
 
 Éditez le README.md, et ajouter y votre nom et prénom ainsi que l'url de votre compte GitHub en suivant le modèle établi (Si vous avez trouvé des fautes d'orthographe dans ce tutoriel, n'hésitez pas à les corriger).
 
-Commitez le tout et envoyer le code vers le dépôt distant.
+Commitez le tout et envoyez le code vers le dépôt distant.
 
 Observez vos changements sur la page du dépôt sur GitHub, ces changements sont uniquement dans votre dépôt et pas dans mon dépôt qui est pourtant l'original.
 
@@ -245,3 +245,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 ## 8. Élèves ayant validé ce cours d'initiation
 
 Sylvain Peigney - https://github.com/volpeo
+Gillian Perard - https://github.com/GillianPerard
