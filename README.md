@@ -3,7 +3,7 @@
 Ce TP fait suite à un cours théorique qui présente Git et Github.
 Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-git
 
-## 0. Quelques pré requis 
+## 0. Quelques pré requis
 
 #### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention.
 
@@ -15,7 +15,7 @@ Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-g
 
 #### Sous VIM (éditeur de texte), vous en aurez aussi besoin lors du TP, lisez bien :
 
-Il existe 2 modes dans cet éditeur : 
+Il existe 2 modes dans cet éditeur :
 - Le mode insertion, accessible en appuyant la touche i quand on est en mode commande. Ce mode permet de taper du texte.
 - Le mode commande, pour y accéder, il faut appuyer sur la touche échap. On peut ensuite taper quelques commandes :
 
@@ -63,7 +63,7 @@ Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'es
 ## 3. Premiers commits
 
 Commencez par créer un fichier nommé index.html, puis tapez :
-	
+
 	git status
 
 Vous aurez un aperçu de la situation, git nous dit que nous avons un fichier non suivi. Nous allons alors l'ajouter avec :
@@ -91,12 +91,12 @@ Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Co
       <div id="game"></div>
     </body>
     </html>
-   
+
 Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur (clic droit, ouvrir avec...), que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
 
 On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
 On peut maintenant essayer de taper :
-	
+
 	git diff
 
 On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
@@ -120,7 +120,7 @@ Insérez la balise suivante après la balise script que nous venons d'insérer :
 Créez aussi un fichier à côté de index.html qui s'appellera game.js
 
 Tapez ensuite :
-	
+
 	git commit -am "Added game file"
 
 En faisant un git status, vous vous appercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
@@ -138,7 +138,7 @@ Testez le fichier index.html dans un navigateur.
 Notre jeu est fonctionnel, commitez les modifications.
 
 Nous pouvons observer l'historique des commits avec :
-	
+
 	git log
 
 ## 4. Branches
@@ -163,7 +163,7 @@ Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous po
 Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
 
 		if (this.bird.angle < 20)
-            		this.bird.angle += 1; 
+            		this.bird.angle += 1;
 
 
 Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
@@ -216,7 +216,7 @@ Nous allons maintenant travailler avec un dépôt distant, histoire de montrer a
 Créez un compte et créer un nouveau dépôt nommé "flappy_clone" (créez ce dépôt sans Readme !!). Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
 
 	git remote add origin <adresse du dépot en https>
-	
+
 	git push -u origin master
 
 Votre projet se trouve maintenant sur github, vous pouvez rafraîchir la page pour observer les résultats.
@@ -246,3 +246,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 
 Sylvain Peigney - https://github.com/volpeo
 Gillian Perard - https://github.com/GillianPerard
+Jonathan Serafini - https://github.com/Joz84
