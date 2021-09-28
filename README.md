@@ -7,21 +7,22 @@ Les slides sont disponible ici : https://speakerdeck.com/volpeo/introduction-a-g
 
 #### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention.
 
-	pwd : affiche le chemin courant
-	ls : lister les fichiers et répertoires dans le répertoire courant
-	cd <repertoire>: change de répertoire pour celui demandé
-	touch <nom-du-fichier> : créé le fichier (vide)
-	mkdir <nom-du-repertoire> : créé le répertoire
+    pwd : affiche le chemin courant
+    ls : lister les fichiers et répertoires dans le répertoire courant
+    cd <repertoire>: change de répertoire pour celui demandé
+    touch <nom-du-fichier> : créé le fichier (vide)
+    mkdir <nom-du-repertoire> : créé le répertoire
 
 #### Sous VIM (éditeur de texte), vous en aurez aussi besoin lors du TP, lisez bien :
 
 Il existe 2 modes dans cet éditeur :
+
 - Le mode insertion, accessible en appuyant la touche i quand on est en mode commande. Ce mode permet de taper du texte.
 - Le mode commande, pour y accéder, il faut appuyer sur la touche échap. On peut ensuite taper quelques commandes :
 
-		:q pour quitter
-		:w pour enregistrer
-		:x pour enregistrer puis quitter
+      :q pour quitter
+      :w pour enregistrer
+      :x pour enregistrer puis quitter
 
 Notez qu'on peut rajouter un point d'exclamation à la suite de la commande pour forcer celle-ci (par exemple quitter un fichier qu'on aurait modifié sans l'enregistrer).
 
@@ -38,16 +39,16 @@ Attention, si vous êtes sous windows, installez la version bash de git. Choisis
 La toute première chose à faire est de configurer l'auteur, donc vous, votre nom et votre adresse email.
 Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
 
-	git config --global user.name "Prénom Nom"
+    git config --global user.name "Prénom Nom"
 
-	git config --global user.email "monemail@fournisseur.com"
+    git config --global user.email "monemail@fournisseur.com"
 
-	git config --global color.ui true
+    git config --global color.ui true
 
 Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
 On peut vérifier que tout c'est bien passé en tapant :
 
-	cat ~/.gitconfig
+    cat ~/.gitconfig
 
 ## 2. Initiatlisation du dépôt
 
@@ -55,7 +56,7 @@ Nous sommes prêt à travailler, il est temps d'initialiser un nouveau dépôt e
 
 Créez un nouveau répertoire (nomez le "flappy_clone" si vous n'avez pas d'inspiration), **placez vous dedans avec le terminal**, puis tapez :
 
-	git init
+    git init
 
 Votre dépôt est initialisé mais bien vide, nous allons ajouter un peu de contenu.
 Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'est que vous vous êtes trompé quelque part et que vous allez partager tous vos fichiers personels sur internet.
@@ -64,17 +65,17 @@ Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'es
 
 Commencez par créer un fichier nommé index.html, puis tapez :
 
-	git status
+    git status
 
 Vous aurez un aperçu de la situation, git nous dit que nous avons un fichier non suivi. Nous allons alors l'ajouter avec :
 
-	git add index.html
+    git add index.html
 
 Un nouveau status vous montrera que le fichier est désormais validé (et donc suivi).
 
 Nous allons maintenant faire un instantané ou "commit" de ces modifications avec :
 
-	git commit -m "Init + added empty index.html file"
+    git commit -m "Init + added empty index.html file"
 
 Préférez rédiger vos messages de commit en anglais.
 
@@ -97,7 +98,7 @@ Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur (cl
 On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
 On peut maintenant essayer de taper :
 
-	git diff
+    git diff
 
 On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
 
@@ -107,7 +108,7 @@ Il manque deux choses à notre jeu pour qu'il fonctionne : un fichier de librair
 
 Nous allons d'abord ajouter la librairie, pour ce faire, coller la ligne suivante juste après la ligne qui contient la balise \<title\> :
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.1.1/phaser.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.1.1/phaser.min.js"></script>
 
 Après un status, voir un diff, faites un commit, toujours en s'appliquant sur le message. Il faut qu'on comprenne quelle a été la modification apportée.
 
@@ -115,22 +116,22 @@ Nous allons maintenant ajouter le code javascript qui contient notre jeu.
 
 Insérez la balise suivante après la balise script que nous venons d'insérer :
 
-	<script src="game.js"></script>
+    <script src="game.js"></script>
 
 Créez aussi un fichier à côté de index.html qui s'appellera game.js
 
 Tapez ensuite :
 
-	git commit -am "Added game file"
+    git commit -am "Added game file"
 
 En faisant un git status, vous vous appercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
 Nous avons deux choix, soit faire un nouveau commit qui ajoute le fichier game.js, ou utiliser l'option --amend qui permet d'ajouter un fichier suivi au commit précédent. Pour la deuxième solution, ajouter le fichier game.js à l'index, puis tapez :
 
-	git commit --amend
+    git commit --amend
 
 Git lancera votre éditeur de texte pour que vous puissiez corriger le message de commit si nécessaire.
 
-Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante  https://gist.github.com/volpeo/479af6400b6d8207affc
+Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante https://gist.github.com/volpeo/479af6400b6d8207affc
 
 Copiez le code et collez-le dans game.js.
 Testez le fichier index.html dans un navigateur.
@@ -139,7 +140,7 @@ Notre jeu est fonctionnel, commitez les modifications.
 
 Nous pouvons observer l'historique des commits avec :
 
-	git log
+    git log
 
 ## 4. Branches
 
@@ -148,27 +149,26 @@ Cependant, nous ne voulons pas créer cette fonctionnalité sur la branche maste
 
 Créez une nouvelle branche nomée jump en tapant :
 
-	git branch jump
+    git branch jump
 
 La nouvelle branche est créée, on peut le vérifier en tapant :
 
-	git branch
+    git branch
 
 La branche courrante est celle qui est précédée d'une étoile. Pour changer de branche, tapez :
 
-	git checkout jump
+    git checkout jump
 
 Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous pouvons effectuer nos modifications tranquillement.
 
 Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
 
-		if (this.bird.angle < 20)
+    	if (this.bird.angle < 20)
             		this.bird.angle += 1;
-
 
 Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
 
-	game.add.tween(this.bird).to({angle: -20}, 100).start();
+    game.add.tween(this.bird).to({angle: -20}, 100).start();
 
 Testez dans votre navigateur la nouvelle animation pour le saut.
 
@@ -182,10 +182,9 @@ Changez de branche pour la branche principale, et inspectez à nouveau votre his
 
 Fusionnez alors la branche jump vers la branche master en tapant :
 
-	git merge jump
+    git merge jump
 
 Un nouveau git log nous montrera le dernier commit qu'il nous manquait, maintenant présent sur la branche master.
-
 
 ## 5. Branche et fusion avec conflit
 
@@ -215,9 +214,9 @@ Nous allons maintenant travailler avec un dépôt distant, histoire de montrer a
 
 Créez un compte et créer un nouveau dépôt nommé "flappy_clone" (créez ce dépôt sans Readme !!). Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
 
-	git remote add origin <adresse du dépot en https>
+    git remote add origin <adresse du dépot en https>
 
-	git push -u origin master
+    git push -u origin master
 
 Votre projet se trouve maintenant sur github, vous pouvez rafraîchir la page pour observer les résultats.
 
@@ -241,7 +240,6 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
-
 ## 8. Élèves ayant validé ce cours d'initiation
 Rohat GEZER - https://github.com/Rohat954/
 Sylvain Peigney - https://github.com/volpeo
@@ -250,6 +248,7 @@ Jonathan Serafini - https://github.com/Joz84
 Dylan GIL AMARO - https://github.com/DylanGil
 Killian Gassin - https://github.com/GKXXX
 Massiré Touré - https://github.com/Massire9/
+Samuel Marien - https://github.com/Samuel-Marien/
 Pierre Marquet - https://github.com/SokouPM
 Romain Bidault - https://github.com/Hulcox
 ibrahima Correa - https://github.com/ibralebrexe
