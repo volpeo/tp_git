@@ -249,3 +249,4 @@ Gillian Perard - https://github.com/GillianPerard
 Jonathan Serafini - https://github.com/Joz84
 Dylan GIL AMARO - https://github.com/DylanGil
 Killian Gassin - https://github.com/GKXXX
+Massiré Touré - https://github.com/Massire9/
