@@ -243,7 +243,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 
 
 ## 8. Élèves ayant validé ce cours d'initiation
-
+Rohat GEZER - https://github.com/Rohat954/
 Sylvain Peigney - https://github.com/volpeo
 Gillian Perard - https://github.com/GillianPerard
 Jonathan Serafini - https://github.com/Joz84
@@ -252,3 +252,4 @@ Killian Gassin - https://github.com/GKXXX
 Vladimir WONJA - https://github.com/Vova-code
 ibrahima Correa - https://github.com/ibralebrexe
 Massiré Touré - https://github.com/Massire9/
+
