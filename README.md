@@ -250,3 +250,4 @@ Jonathan Serafini - https://github.com/Joz84
 Dylan GIL AMARO - https://github.com/DylanGil
 Killian Gassin - https://github.com/GKXXX
 Vladimir WONJA - https://github.com/Vova-code
+Massiré Touré - https://github.com/Massire9/
