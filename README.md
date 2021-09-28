@@ -251,3 +251,4 @@ Dylan GIL AMARO - https://github.com/DylanGil
 Killian Gassin - https://github.com/GKXXX
 ibrahima Correa - https://github.com/ibralebrexe
 Massiré Touré - https://github.com/Massire9/
+Pierre Marquet - https://github.com/SokouPM
