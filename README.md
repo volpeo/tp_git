@@ -247,7 +247,10 @@ Gillian Perard - https://github.com/GillianPerard
 Jonathan Serafini - https://github.com/Joz84
 Dylan GIL AMARO - https://github.com/DylanGil
 Killian Gassin - https://github.com/GKXXX
-Vladimir WONJA - https://github.com/Vova-code
-ibrahima Correa - https://github.com/ibralebrexe
 Massiré Touré - https://github.com/Massire9/
 Samuel Marien - https://github.com/Samuel-Marien/
+Pierre Marquet - https://github.com/SokouPM
+Romain Bidault - https://github.com/Hulcox
+ibrahima Correa - https://github.com/ibralebrexe
+Vladimir WONJA - https://github.com/Vova-code
+Dany De Carvalho - https://github.com/DanyDeCarvalho
