@@ -255,11 +255,3 @@ Romain Bidault - https://github.com/Hulcox
 ibrahima Correa - https://github.com/ibralebrexe
 Vladimir WONJA - https://github.com/Vova-code
 Dany De Carvalho - https://github.com/DanyDeCarvalho
-
-Dylan GIL AMARO - https://github.com/DylanGil
-Killian Gassin - https://github.com/GKXXX
-Massiré Touré - https://github.com/Massire9/
-Pierre Marquet - https://github.com/SokouPM
-Romain Bidault - https://github.com/Hulcox
-ibrahima Correa - https://github.com/ibralebrexe
-Vladimir WONJA - https://github.com/Vova-code
