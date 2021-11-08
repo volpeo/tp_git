@@ -247,3 +247,5 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 Sylvain Peigney - https://github.com/volpeo
 Gillian Perard - https://github.com/GillianPerard
 Jonathan Serafini - https://github.com/Joz84
+Lecuyer Camille - https://github.com/CamilleDEV21
+
