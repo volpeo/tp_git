@@ -257,3 +257,4 @@ Yasser CHOUAF - https://github.com/ysrchf
 Dany De Carvalho - https://github.com/DanyDeCarvalho
 Roméo LAURENT - https://github.com/romrom21
 Kerwan GARCON - https://github.com/Kerwan-Garcon
+Kevin RAJENDRAM - https://github.com/laxan94
