@@ -261,3 +261,4 @@ Roméo LAURENT - https://github.com/romrom21
 Kerwan GARCON - https://github.com/Kerwan-Garcon
 Kevin RAJENDRAM - https://github.com/laxan94
 Thierno OUMAR - https://github.com/Zenlaeth
+Chloé GERARDIN - https://github.com/chloegaladriel
