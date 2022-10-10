@@ -283,6 +283,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 
 ## 8. Élèves ayant validé ce cours d'initiation
 
+Nora SEDJAI - https://github.com/NoraSEDJAI
 Rohat GEZER - https://github.com/Rohat954/  
 Sylvain Peigney - https://github.com/volpeo  
 Gillian Perard - https://github.com/GillianPerard  
@@ -310,3 +311,4 @@ Faiza Berrichi - https://github.com/FAITH-ORAN
 Mohamed AHAMADOU - https://github.com/ansar-95  
 Yanis CORSELLE - https://github.com/yaniscorselle8  
 Mubashar AHMED - https://github.com/MubasharAHMED  
+
