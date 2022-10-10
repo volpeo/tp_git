@@ -318,3 +318,4 @@ Evan Barras - https://github.com/Evbrs
 Killian VELITCH - https://github.com/kikidbz/  
 Meyer ATTAL - https://github.com/meyer0x  
 Killian THIMON - https://github.com/AsusuAlone  
+Cédric Gautier - https://github.com/cedricgautier  
