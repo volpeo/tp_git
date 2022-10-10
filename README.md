@@ -324,3 +324,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Hugo Tourneur - <https://github.com/HugoTourneur>
 - Chloé GERARDIN - <https://github.com/chloegaladriel>
 - Théo Charron - <https://github.com/Zh0rg>
+- Lucas SENOVILLE - <https://github.com/Lucas-Senoville>
