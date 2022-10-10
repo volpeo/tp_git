@@ -319,3 +319,4 @@ Killian VELITCH - https://github.com/kikidbz/
 Meyer ATTAL - https://github.com/meyer0x  
 Killian THIMON - https://github.com/AsusuAlone  
 Cédric Gautier - https://github.com/cedricgautier  
+Richard Zukowski - https://github.com/zrichard22  
