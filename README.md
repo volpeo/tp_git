@@ -302,6 +302,8 @@ Roméo LAURENT - https://github.com/romrom21
 Kerwan GARCON - https://github.com/Kerwan-Garcon
 Kevin RAJENDRAM - https://github.com/laxan94
 Thierno OUMAR - https://github.com/Zenlaeth
+Samuel Camara - https://github.com/Samuel78-ux
 Faiza Berrichi - https://github.com/FAITH-ORAN
 Mohamed AHAMADOU - https://github.com/ansar-95
 Yanis CORSELLE - https://github.com/yaniscorselle8
+
