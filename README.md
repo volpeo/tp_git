@@ -315,3 +315,4 @@ Alpha BALDE - https://github.com/Alpha-Marga
 Ryan LEFEBVRE - https://github.com/RyanLefebvreT  
 Loïc LE CLERE - https://github.com/loicLeClere  
 Evan Barras - https://github.com/Evbrs  
+Killian VELITCH - https://github.com/kikidbz/  
