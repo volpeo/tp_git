@@ -282,6 +282,7 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
 ## 8. Élèves ayant validé ce cours d'initiation
+
 Rohat GEZER - https://github.com/Rohat954/  
 Sylvain Peigney - https://github.com/volpeo  
 Gillian Perard - https://github.com/GillianPerard  
@@ -303,7 +304,9 @@ Kerwan GARCON - https://github.com/Kerwan-Garcon
 Kevin RAJENDRAM - https://github.com/laxan94  
 Thierno OUMAR - https://github.com/Zenlaeth  
 Amina Larbi - https://github.com/amdz213  
+merina hamzaoui - https://github.com/hamzaoui12  
 Samuel Camara - https://github.com/Samuel78-ux  
 Faiza Berrichi - https://github.com/FAITH-ORAN  
 Mohamed AHAMADOU - https://github.com/ansar-95  
 Yanis CORSELLE - https://github.com/yaniscorselle8  
+
