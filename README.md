@@ -282,28 +282,28 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
 ## 8. Élèves ayant validé ce cours d'initiation
-Rohat GEZER - https://github.com/Rohat954/
-Sylvain Peigney - https://github.com/volpeo
-Gillian Perard - https://github.com/GillianPerard
-Jonathan Serafini - https://github.com/Joz84
-Dylan GIL AMARO - https://github.com/DylanGil
-Killian Gassin - https://github.com/GKXXX
-Massiré Touré - https://github.com/Massire9/
-Samuel Marien - https://github.com/Samuel-Marien/
-Pierre Marquet - https://github.com/SokouPM
-Romain Bidault - https://github.com/Hulcox
-ibrahima Correa - https://github.com/ibralebrexe
-Vladimir WONJA - https://github.com/Vova-code
-Yasser CHOUAF - https://github.com/ysrchf
-Dany De Carvalho - https://github.com/DanyDeCarvalho
-Matheus Nunes Borba - https://github.com/matheusnb99
-Guillaume Chaduc-Nguyen - https://github.com/Nikasaih
-Roméo LAURENT - https://github.com/romrom21
-Kerwan GARCON - https://github.com/Kerwan-Garcon
-Kevin RAJENDRAM - https://github.com/laxan94
-Thierno OUMAR - https://github.com/Zenlaeth
-Samuel Camara - https://github.com/Samuel78-ux
-Faiza Berrichi - https://github.com/FAITH-ORAN
-Mohamed AHAMADOU - https://github.com/ansar-95
-Yanis CORSELLE - https://github.com/yaniscorselle8
-
+Rohat GEZER - https://github.com/Rohat954/  
+Sylvain Peigney - https://github.com/volpeo  
+Gillian Perard - https://github.com/GillianPerard  
+Jonathan Serafini - https://github.com/Joz84  
+Dylan GIL AMARO - https://github.com/DylanGil  
+Killian Gassin - https://github.com/GKXXX  
+Massiré Touré - https://github.com/Massire9/  
+Samuel Marien - https://github.com/Samuel-Marien/  
+Pierre Marquet - https://github.com/SokouPM  
+Romain Bidault - https://github.com/Hulcox  
+ibrahima Correa - https://github.com/ibralebrexe  
+Vladimir WONJA - https://github.com/Vova-code  
+Yasser CHOUAF - https://github.com/ysrchf  
+Dany De Carvalho - https://github.com/DanyDeCarvalho  
+Matheus Nunes Borba - https://github.com/matheusnb99  
+Guillaume Chaduc-Nguyen - https://github.com/Nikasaih  
+Roméo LAURENT - https://github.com/romrom21  
+Kerwan GARCON - https://github.com/Kerwan-Garcon  
+Kevin RAJENDRAM - https://github.com/laxan94  
+Thierno OUMAR - https://github.com/Zenlaeth  
+Amina Larbi - https://github.com/amdz213  
+Samuel Camara - https://github.com/Samuel78-ux  
+Faiza Berrichi - https://github.com/FAITH-ORAN  
+Mohamed AHAMADOU - https://github.com/ansar-95  
+Yanis CORSELLE - https://github.com/yaniscorselle8  
