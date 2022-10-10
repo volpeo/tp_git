@@ -325,3 +325,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Chloé GERARDIN - <https://github.com/chloegaladriel>
 - Théo Charron - <https://github.com/Zh0rg>
 - Lucas SENOVILLE - <https://github.com/Lucas-Senoville>
+- Walid DJEMMAA - <https://github.com/Dje-Walid>
