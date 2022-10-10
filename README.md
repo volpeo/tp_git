@@ -1,14 +1,15 @@
 ﻿# TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
-Les slides sont disponible ici : <https://speakerdeck.com/volpeo/introduction-a-git>
 
-##  0. Quelques pré requis
+Les slides sont disponibles ici : https://speakerdeck.com/volpeo/introduction-a-git
+
+## 0. Quelques prérequis
 
 ### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention
 
     pwd : affiche le chemin courant
-    ls : lister les fichiers et répertoires dans le répertoire courant
+    ls : liste les fichiers et répertoires dans le répertoire courant
     cd <repertoire>: change de répertoire pour celui demandé
     touch <nom-du-fichier> : créé le fichier (vide)
     mkdir <nom-du-repertoire> : créé le répertoire
@@ -20,9 +21,11 @@ Il existe 2 modes dans cet éditeur :
 - Le mode insertion, accessible en appuyant la touche i quand on est en mode commande. Ce mode permet de taper du texte.
 - Le mode commande, pour y accéder, il faut appuyer sur la touche échap. On peut ensuite taper quelques commandes :
 
+```shell
       :q pour quitter
       :w pour enregistrer
       :x pour enregistrer puis quitter
+```
 
 Notez qu'on peut rajouter un point d'exclamation à la suite de la commande pour forcer celle-ci (par exemple quitter un fichier qu'on aurait modifié sans l'enregistrer).
 
@@ -39,48 +42,59 @@ Attention, si vous êtes sous windows, installez la version bash de git. Choisis
 La toute première chose à faire est de configurer l'auteur, donc vous, votre nom et votre adresse email.
 Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
 
+```shell
     git config --global user.name "Prénom Nom"
-
     git config --global user.email "monemail@fournisseur.com"
-
     git config --global color.ui true
-
+```
 Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
 On peut vérifier que tout c'est bien passé en tapant :
 
+```shell
     cat ~/.gitconfig
+```
 
-## 2. Initiatlisation du dépôt
+## 2. Initialisation du dépôt
 
-Nous sommes prêt à travailler, il est temps d'initialiser un nouveau dépôt et de travailler sur nos fichier. Nous allons ici créer un clone de flappy bird en javascript.
+Nous sommes prêts à travailler, il est temps d'initialiser un nouveau dépôt et de travailler sur nos fichiers. Nous allons ici créer un clone de flappy bird en javascript.
 
-Créez un nouveau répertoire (nomez le "flappy_clone" si vous n'avez pas d'inspiration), **placez vous dedans avec le terminal**, puis tapez :
+Créez un nouveau répertoire (nommez-le "flappy_clone" si vous n'avez pas d'inspiration), **placez vous dedans avec le terminal**, puis tapez :
 
+```shell
     git init
+```
 
 Votre dépôt est initialisé mais bien vide, nous allons ajouter un peu de contenu.
-Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'est que vous vous êtes trompé quelque part et que vous allez partager tous vos fichiers personels sur internet.
+Listez les fichiers du répertoire courant, si vous voyez une longue liste, c'est que vous vous êtes trompé quelque part et que vous allez partager tous vos fichiers personnels sur internet.
+Si vous voyez juste un dossier .git, vous êtes au bon endroit (n'hésitez pas à aller regarder - pas toucher - ce que contient ce dossier).
 
 ## 3. Premiers commits
 
 Commencez par créer un fichier nommé index.html, puis tapez :
 
+```shell
     git status
+```
 
 Vous aurez un aperçu de la situation, git nous dit que nous avons un fichier non suivi. Nous allons alors l'ajouter avec :
 
+```shell
     git add index.html
+```
 
-Un nouveau status vous montrera que le fichier est désormais validé (et donc suivi).
+Un nouveau git status vous montrera que le fichier est désormais validé (et donc suivi).
 
 Nous allons maintenant faire un instantané ou "commit" de ces modifications avec :
 
+```shell
     git commit -m "Init + added empty index.html file"
+```
 
 Préférez rédiger vos messages de commit en anglais.
 
 Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Collez le code suivant dans le fichier index.html avec votre éditeur de code préféré (utilisez notepad++ ou sublime text si vous n'en avez aucun installé sur votre machine, pas de textedit !) :
 
+```shell
     <!DOCTYPE html>
     <html>
     <head>
@@ -92,13 +106,16 @@ Nous allons maintenant insérer du contenu dans ce fichier qui est bien vide. Co
       <div id="game"></div>
     </body>
     </html>
+```
 
 Vous pouvez constater qu'en ouvrant le fichier index.html avec un navigateur (clic droit, ouvrir avec...), que le contenu s'affiche bien à l'écran, malheureusement ce n'est pas encore très amusant.
 
 On peut faire un status pour voir ce qu'il se passe. On s'apperçoit que git a compris notre modification.
 On peut maintenant essayer de taper :
 
+```shell
     git diff
+```
 
 On voit alors les modifications apportées, ici uniquement des lignes ajoutées.
 
@@ -108,7 +125,9 @@ Il manque deux choses à notre jeu pour qu'il fonctionne : un fichier de librair
 
 Nous allons d'abord ajouter la librairie, pour ce faire, coller la ligne suivante juste après la ligne qui contient la balise \<title\> :
 
+```shell
     <script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.1.1/phaser.min.js"></script>
+```
 
 Après un status, voir un diff, faites un commit, toujours en s'appliquant sur le message. Il faut qu'on comprenne quelle a été la modification apportée.
 
@@ -116,18 +135,24 @@ Nous allons maintenant ajouter le code javascript qui contient notre jeu.
 
 Insérez la balise suivante après la balise script que nous venons d'insérer :
 
+```shell
     <script src="game.js"></script>
+```
 
 Créez aussi un fichier à côté de index.html qui s'appellera game.js
 
 Tapez ensuite :
 
+```shell
     git commit -am "Added game file"
+```
 
-En faisant un git status, vous vous appercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
+En faisant un git status, vous vous apercevrez que nous avons fait une bourde, nous avons commité uniquement le fichier index.html car il était suivi par git, mais pas game.js, car lui n'était pas suivi.
 Nous avons deux choix, soit faire un nouveau commit qui ajoute le fichier game.js, ou utiliser l'option --amend qui permet d'ajouter un fichier suivi au commit précédent. Pour la deuxième solution, ajouter le fichier game.js à l'index, puis tapez :
 
+```shell
     git commit --amend
+```
 
 Git lancera votre éditeur de texte pour que vous puissiez corriger le message de commit si nécessaire.
 
@@ -140,7 +165,9 @@ Notre jeu est fonctionnel, commitez les modifications.
 
 Nous pouvons observer l'historique des commits avec :
 
+```shell
     git log
+```
 
 ##  4. Branches
 
@@ -149,40 +176,52 @@ Cependant, nous ne voulons pas créer cette fonctionnalité sur la branche maste
 
 Créez une nouvelle branche nomée jump en tapant :
 
+```shell
     git branch jump
+```
 
 La nouvelle branche est créée, on peut le vérifier en tapant :
 
+```shell
     git branch
+```
 
 La branche courrante est celle qui est précédée d'une étoile. Pour changer de branche, tapez :
 
+```shell
     git checkout jump
+```
 
 Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous pouvons effectuer nos modifications tranquillement.
 
 Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
 
+```shell
     if (this.bird.angle < 20)
         this.bird.angle += 1;
+```
 
 Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
 
+```shell
     game.add.tween(this.bird).to({angle: -20}, 100).start();
+```
 
 Testez dans votre navigateur la nouvelle animation pour le saut.
 
 Une fois que vous êtes satisfait de votre code et que vous êtes sûr de n'avoir rien cassé, commitez les changements.
 
-Nous nous retrouvons ici avec une branche qui contient une fonctionnalité, et la branche principale (master) qui n'en profite pas. Maintenant que nous sommes sûr que la fonctionnalité marche, nous pouvons la rappatrier sur la branche principale (master).
+Nous nous retrouvons ici avec une branche qui contient une fonctionnalité, et la branche principale (master) qui n'en profite pas. Maintenant que nous sommes sûrs que la fonctionnalité marche, nous pouvons la rapatrier sur la branche principale (master).
 
-Avant de changer de branche, faite un git log pour observer votre historique, constatez que votre dernier commit conscerne l'animation du saut.
+Avant de changer de branche, faites un git log pour observer votre historique, constatez que votre dernier commit concerne l'animation du saut.
 
 Changez de branche pour la branche principale, et inspectez à nouveau votre historique, ici le commit de l'animation du saut n'est pas présent.
 
 Fusionnez alors la branche jump vers la branche master en tapant :
 
+```shell
     git merge jump
+```
 
 Un nouveau git log nous montrera le dernier commit qu'il nous manquait, maintenant présent sur la branche master.
 
@@ -214,15 +253,18 @@ Nous allons maintenant travailler avec un dépôt distant, histoire de montrer a
 
 Créez un compte et créer un nouveau dépôt nommé "flappy_clone" (créez ce dépôt sans Readme !!). Github va vous donner la marche à suivre pour configurer ce nouveau dépôt distant en local. Dans votre terminal, toujours dans votre dépôt local, tapez :
 
+```shell
     git remote add origin <adresse du dépot en https>
-
     git push -u origin master
+```
 
 Votre projet se trouve maintenant sur github, vous pouvez rafraîchir la page pour observer les résultats.
+Notre histoire avec flappy_clone s'arrête ici pour le moment.
 
 ##  7. Fork et pull request
 
-Maintenant que votre projet est en ligne, on va contribuer à un projet. "Forkez" le projet tp_git, il devrait ensuite se trouver dans votre compte GitHub. Récupérez le grâce à la commande git clone (l'adresse pour récupérer le dépôt se trouve sur la droite, choisissez le mode https). N'oubliez pas de vous placer dans un autre répertoire que flappy_clone pour cloner le dépôt. La commande git clone créé elle même un répertoire et y place le code à l'intérieur.
+Maintenant que votre projet est en ligne, on va contribuer à un projet. "Forkez" le projet tp_git, il devrait ensuite se trouver dans votre compte GitHub. Récupérez le grâce à la commande git clone (l'adresse pour récupérer le dépôt se trouve sur la droite, choisissez le mode https).  
+N'oubliez pas de vous placer dans un autre répertoire que flappy_clone pour cloner le dépôt. La commande git clone créé elle même un répertoire et y place le code à l'intérieur.
 
 Une fois le dépôt téléchargé sur votre machine, vous avez accès à l'historique (et donc vous verrez mes différents commits qui suivent l'évolution de ce document, mes fautes de frappes corrigées, etc.).
 
@@ -240,13 +282,14 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
-##  8. Élèves ayant validé ce cours d'initiation
+## 8. Élèves ayant validé ce cours d'initiation
 
-- Rohat GEZER - <https://github.com/Rohat954/>
+- Nora SEDJAI - <https://github.com/NoraSEDJAI>
+- Rohat GEZER - <https://github.com/Rohat954>
 - Sylvain Peigney - <https://github.com/volpeo>
 - Gillian Perard - <https://github.com/GillianPerard>
 - Jonathan Serafini - <https://github.com/Joz84>
-- Dylan GIL AMARO - <https://github.com/DylanGil>
+- Dylan GIL AMARO - <https://github.com/DylanGil>  
 - Killian Gassin - <https://github.com/GKXXX>
 - Massiré Touré - <https://github.com/Massire9/>
 - Samuel Marien - <https://github.com/Samuel-Marien/>
@@ -256,10 +299,28 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Vladimir WONJA - <https://github.com/Vova-code>
 - Yasser CHOUAF - <https://github.com/ysrchf>
 - Dany De Carvalho - <https://github.com/DanyDeCarvalho>
-- Matheus Nunes Borba - <https://github.com/matheusnb99>
-- Guillaume Chaduc-Nguyen - <https://github.com/Nikasaih>
+- Matheus Nunes Borba - <https://github.com/matheusnb99> 
+- Guillaume Chaduc-Nguyen - <https://github.com/Nikasaih>  
 - Roméo LAURENT - <https://github.com/romrom21>
 - Kerwan GARCON - <https://github.com/Kerwan-Garcon>
 - Kevin RAJENDRAM - <https://github.com/laxan94>
 - Thierno OUMAR - <https://github.com/Zenlaeth>
+- Amina Larbi - <https://github.com/amdz213>
+- merina hamzaoui - <https://github.com/hamzaoui12>
+- Samuel Camara - <https://github.com/Samuel78-ux>
+- Faiza Berrichi - <https://github.com/FAITH-ORAN> 
+- Mohamed AHAMADOU - <https://github.com/ansar-95>
+- Yanis CORSELLE - <https://github.com/yaniscorselle8>
+- Mubashar AHMED - <https://github.com/MubasharAHMED>
+- Alpha BALDE - <https://github.com/Alpha-Marga>
+- Ryan LEFEBVRE - <https://github.com/RyanLefebvreT>
+- Loïc LE CLERE - <https://github.com/loicLeClere>
+- Evan Barras - <https://github.com/Evbrs>
+- Killian VELITCH - <https://github.com/kikidbz/>
+- Meyer ATTAL - <https://github.com/meyer0x>
+- Killian THIMON - <https://github.com/AsusuAlone>
+- Cédric Gautier - <https://github.com/cedricgautier>
+- Richard Zukowski - <https://github.com/zrichard22>
+- Hugo Tourneur - <https://github.com/HugoTourneur>
+- Chloé GERARDIN - <https://github.com/chloegaladriel>
 - Théo Charron - <https://github.com/Zh0rg>
