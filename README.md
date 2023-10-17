@@ -328,3 +328,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Walid DJEMMAA - <https://github.com/Dje-Walid>
 - Vitor Sousa - <https://github.com/rd-xx>
 - Julien HAMEL - <https://github.com/Zweird-958>
+- Magali DESLOUS-PAOLI <https://github.com/Magali-D>
