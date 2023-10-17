@@ -330,6 +330,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Damien Fajole - <https://github.com/DamsDev1>
 - Vitor Sousa - <https://github.com/rd-xx>
 - Julien HAMEL - <https://github.com/Zweird-958>
+- Magali DESLOUS-PAOLI <https://github.com/Magali-D>
 - Ken KOBLAVI-DIBI - <https://github.com/ViewKen1>
 - Clarisse ROUYERE - <https://github.com/ClarisseRouyere>
 - Bruno GOMES PEIXOTO - <https://github.com/SeRiice>
