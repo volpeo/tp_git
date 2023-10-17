@@ -1,4 +1,4 @@
-﻿# TP Git & Github
+# TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
 
@@ -327,3 +327,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Lucas SENOVILLE - <https://github.com/Lucas-Senoville>
 - Walid DJEMMAA - <https://github.com/Dje-Walid>
 - Vitor Sousa - <https://github.com/rd-xx>
+- Julien HAMEL - <https://github.com/Zweird-958>
