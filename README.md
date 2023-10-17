@@ -326,6 +326,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Théo Charron - <https://github.com/Zh0rg>
 - Lucas SENOVILLE - <https://github.com/Lucas-Senoville>
 - Walid DJEMMAA - <https://github.com/Dje-Walid>
+- Amina LOZI - <https://github.com/loziamina>
 - Damien Fajole - <https://github.com/DamsDev1>
 - Vitor Sousa - <https://github.com/rd-xx>
 - Julien HAMEL - <https://github.com/Zweird-958>
