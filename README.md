@@ -47,6 +47,7 @@ Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
     git config --global user.email "monemail@fournisseur.com"
     git config --global color.ui true
 ```
+
 Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
 On peut vérifier que tout c'est bien passé en tapant :
 
@@ -289,7 +290,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Sylvain Peigney - <https://github.com/volpeo>
 - Gillian Perard - <https://github.com/GillianPerard>
 - Jonathan Serafini - <https://github.com/Joz84>
-- Dylan GIL AMARO - <https://github.com/DylanGil>  
+- Dylan GIL AMARO - <https://github.com/DylanGil>
 - Killian Gassin - <https://github.com/GKXXX>
 - Massiré Touré - <https://github.com/Massire9/>
 - Samuel Marien - <https://github.com/Samuel-Marien/>
@@ -299,8 +300,8 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Vladimir WONJA - <https://github.com/Vova-code>
 - Yasser CHOUAF - <https://github.com/ysrchf>
 - Dany De Carvalho - <https://github.com/DanyDeCarvalho>
-- Matheus Nunes Borba - <https://github.com/matheusnb99> 
-- Guillaume Chaduc-Nguyen - <https://github.com/Nikasaih>  
+- Matheus Nunes Borba - <https://github.com/matheusnb99>
+- Guillaume Chaduc-Nguyen - <https://github.com/Nikasaih>
 - Roméo LAURENT - <https://github.com/romrom21>
 - Kerwan GARCON - <https://github.com/Kerwan-Garcon>
 - Kevin RAJENDRAM - <https://github.com/laxan94>
@@ -308,7 +309,7 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Amina Larbi - <https://github.com/amdz213>
 - merina hamzaoui - <https://github.com/hamzaoui12>
 - Samuel Camara - <https://github.com/Samuel78-ux>
-- Faiza Berrichi - <https://github.com/FAITH-ORAN> 
+- Faiza Berrichi - <https://github.com/FAITH-ORAN>
 - Mohamed AHAMADOU - <https://github.com/ansar-95>
 - Yanis CORSELLE - <https://github.com/yaniscorselle8>
 - Mubashar AHMED - <https://github.com/MubasharAHMED>
@@ -334,3 +335,4 @@ Une fois réalisée, vous pouvez observer sur le projet original toutes les prop
 - Ken KOBLAVI-DIBI - <https://github.com/ViewKen1>
 - Clarisse ROUYERE - <https://github.com/ClarisseRouyere>
 - Bruno GOMES PEIXOTO - <https://github.com/SeRiice>
+- Mohamed-Amine FADHLAOUI - <https://github.com/MhaFADH>
