@@ -1,11 +1,12 @@
-﻿# TP Git & Github
+# TP Git & Github
 
 Ce TP fait suite à un cours théorique qui présente Git et Github.
+
 Les slides sont disponibles ici : https://speakerdeck.com/volpeo/introduction-a-git
 
 ## 0. Quelques prérequis
 
-#### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention.
+### Quelques commandes pratiques sur bash dont vous aurez besoin tout au long du TP, si vous ne les connaissez pas, veuillez bien y faire attention
 
     pwd : affiche le chemin courant
     ls : liste les fichiers et répertoires dans le répertoire courant
@@ -13,7 +14,7 @@ Les slides sont disponibles ici : https://speakerdeck.com/volpeo/introduction-a-
     touch <nom-du-fichier> : créé le fichier (vide)
     mkdir <nom-du-repertoire> : créé le répertoire
 
-#### Sous VIM (éditeur de texte), vous en aurez aussi besoin lors du TP, lisez bien :
+###  Sous VIM (éditeur de texte), vous en aurez aussi besoin lors du TP, lisez bien :
 
 Il existe 2 modes dans cet éditeur :
 
@@ -32,7 +33,7 @@ Notez qu'on peut rajouter un point d'exclamation à la suite de la commande pour
 
 ### Installation
 
-Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation. http://git-scm.com/
+Rendez-vous sur la page de téléchargement de git, celle-ci contient des instructions selon votre système d'exploitation. <http://git-scm.com/>
 
 Attention, si vous êtes sous windows, installez la version bash de git. Choisissez l'option "Checkout Windows-style, commit Unix-style" à l'écran suivant (toutes les options par défaut).
 
@@ -46,6 +47,7 @@ Dans votre terminal (ou git bash), tapez (ces commandes ne répondent rien) :
     git config --global user.email "monemail@fournisseur.com"
     git config --global color.ui true
 ```
+
 Cela va ajouter des lignes à votre fichier de configuration .gitconfig, la dernière ligne permet de mettre un peu de couleur dans la réponse des différentes commande de git, ce n'est pas du luxe.
 On peut vérifier que tout c'est bien passé en tapant :
 
@@ -155,7 +157,7 @@ Nous avons deux choix, soit faire un nouveau commit qui ajoute le fichier game.j
 
 Git lancera votre éditeur de texte pour que vous puissiez corriger le message de commit si nécessaire.
 
-Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante https://gist.github.com/volpeo/479af6400b6d8207affc
+Nous allons maintenant passer au choses sérieuses, rendez-vous à l'adresse suivante <https://gist.github.com/volpeo/479af6400b6d8207affc>
 
 Copiez le code et collez-le dans game.js.
 Testez le fichier index.html dans un navigateur.
@@ -168,7 +170,7 @@ Nous pouvons observer l'historique des commits avec :
     git log
 ```
 
-## 4. Branches
+##  4. Branches
 
 Nous décidons maintenant d'ajouter une fonctionnalité à notre jeu. Le saut du carré jaune représentant l'oiseau n'est pas très réaliste, nous allons ajouter quelques lignes qui vont améliorer ça.
 Cependant, nous ne voulons pas créer cette fonctionnalité sur la branche master, pour ne pas la polluer, mais plutôt sur une nouvelle branche.
@@ -196,8 +198,8 @@ Nous sommes sur la branche consacrée à notre nouvelle fonctionnalité, nous po
 Dans game.js, cherchez le commentaire "Rotate the bird" et insérez les lignes suivante juste en dessous :
 
 ```shell
-    	if (this.bird.angle < 20)
-            		this.bird.angle += 1;
+    if (this.bird.angle < 20)
+        this.bird.angle += 1;
 ```
 
 Cherchez ensuite le commentaire "Jump animation" quelques lignes plus bas, et copiez juste en dessous :
@@ -224,7 +226,7 @@ Fusionnez alors la branche jump vers la branche master en tapant :
 
 Un nouveau git log nous montrera le dernier commit qu'il nous manquait, maintenant présent sur la branche master.
 
-## 5. Branche et fusion avec conflit
+##  5. Branche et fusion avec conflit
 
 Nous décidons d'essayer le jeu avec une nouvelle couleur de fond.
 Créez une nouvelle branche nommée "background", positionnez vous dessus et éditez le fichier game.js.
@@ -246,7 +248,7 @@ Il faut supprimer les lignes entières contenant "<<<<<<<<<<<<< HEAD" le sépara
 
 Commitez les changements en signalant le merge dans le message du commit.
 
-## 6. Remote et Github
+##  6. Remote et Github
 
 Nous allons maintenant travailler avec un dépôt distant, histoire de montrer au monde entier notre code, nous choisissons de le mettre sur GitHub.
 
@@ -260,7 +262,7 @@ Créez un compte et créer un nouveau dépôt nommé "flappy_clone" (créez ce d
 Votre projet se trouve maintenant sur github, vous pouvez rafraîchir la page pour observer les résultats.
 Notre histoire avec flappy_clone s'arrête ici pour le moment.
 
-## 7. Fork et pull request
+##  7. Fork et pull request
 
 Maintenant que votre projet est en ligne, on va contribuer à un projet. "Forkez" le projet tp_git, il devrait ensuite se trouver dans votre compte GitHub. Récupérez le grâce à la commande git clone (l'adresse pour récupérer le dépôt se trouve sur la droite, choisissez le mode https).  
 N'oubliez pas de vous placer dans un autre répertoire que flappy_clone pour cloner le dépôt. La commande git clone créé elle même un répertoire et y place le code à l'intérieur.
@@ -282,24 +284,55 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
 ## 8. Élèves ayant validé ce cours d'initiation
-Rohat GEZER - https://github.com/Rohat954/
-Sylvain Peigney - https://github.com/volpeo
-Gillian Perard - https://github.com/GillianPerard
-Jonathan Serafini - https://github.com/Joz84
-Dylan GIL AMARO - https://github.com/DylanGil
-Killian Gassin - https://github.com/GKXXX
-Massiré Touré - https://github.com/Massire9/
-Samuel Marien - https://github.com/Samuel-Marien/
-Pierre Marquet - https://github.com/SokouPM
-Romain Bidault - https://github.com/Hulcox
-ibrahima Correa - https://github.com/ibralebrexe
-Vladimir WONJA - https://github.com/Vova-code
-Yasser CHOUAF - https://github.com/ysrchf
-Dany De Carvalho - https://github.com/DanyDeCarvalho
-Matheus Nunes Borba - https://github.com/matheusnb99
-Guillaume Chaduc-Nguyen - https://github.com/Nikasaih
-Roméo LAURENT - https://github.com/romrom21
-Kerwan GARCON - https://github.com/Kerwan-Garcon
-Kevin RAJENDRAM - https://github.com/laxan94
-Thierno OUMAR - https://github.com/Zenlaeth
-Yanis CORSELLE - https://github.com/yaniscorselle8
+
+- Nora SEDJAI - <https://github.com/NoraSEDJAI>
+- Rohat GEZER - <https://github.com/Rohat954>
+- Sylvain Peigney - <https://github.com/volpeo>
+- Gillian Perard - <https://github.com/GillianPerard>
+- Jonathan Serafini - <https://github.com/Joz84>
+- Dylan GIL AMARO - <https://github.com/DylanGil>
+- Killian Gassin - <https://github.com/GKXXX>
+- Massiré Touré - <https://github.com/Massire9/>
+- Samuel Marien - <https://github.com/Samuel-Marien/>
+- Pierre Marquet - <https://github.com/SokouPM>
+- Romain Bidault - <https://github.com/Hulcox>
+- ibrahima Correa - <https://github.com/ibralebrexe>
+- Vladimir WONJA - <https://github.com/Vova-code>
+- Yasser CHOUAF - <https://github.com/ysrchf>
+- Dany De Carvalho - <https://github.com/DanyDeCarvalho>
+- Matheus Nunes Borba - <https://github.com/matheusnb99>
+- Guillaume Chaduc-Nguyen - <https://github.com/Nikasaih>
+- Roméo LAURENT - <https://github.com/romrom21>
+- Kerwan GARCON - <https://github.com/Kerwan-Garcon>
+- Kevin RAJENDRAM - <https://github.com/laxan94>
+- Thierno OUMAR - <https://github.com/Zenlaeth>
+- Amina Larbi - <https://github.com/amdz213>
+- merina hamzaoui - <https://github.com/hamzaoui12>
+- Samuel Camara - <https://github.com/Samuel78-ux>
+- Faiza Berrichi - <https://github.com/FAITH-ORAN>
+- Mohamed AHAMADOU - <https://github.com/ansar-95>
+- Yanis CORSELLE - <https://github.com/yaniscorselle8>
+- Mubashar AHMED - <https://github.com/MubasharAHMED>
+- Alpha BALDE - <https://github.com/Alpha-Marga>
+- Ryan LEFEBVRE - <https://github.com/RyanLefebvreT>
+- Loïc LE CLERE - <https://github.com/loicLeClere>
+- Evan Barras - <https://github.com/Evbrs>
+- Killian VELITCH - <https://github.com/kikidbz/>
+- Meyer ATTAL - <https://github.com/meyer0x>
+- Killian THIMON - <https://github.com/AsusuAlone>
+- Cédric Gautier - <https://github.com/cedricgautier>
+- Richard Zukowski - <https://github.com/zrichard22>
+- Hugo Tourneur - <https://github.com/HugoTourneur>
+- Chloé GERARDIN - <https://github.com/chloegaladriel>
+- Théo Charron - <https://github.com/Zh0rg>
+- Lucas SENOVILLE - <https://github.com/Lucas-Senoville>
+- Walid DJEMMAA - <https://github.com/Dje-Walid>
+- Amina LOZI - <https://github.com/loziamina>
+- Damien Fajole - <https://github.com/DamsDev1>
+- Vitor Sousa - <https://github.com/rd-xx>
+- Julien HAMEL - <https://github.com/Zweird-958>
+- Magali DESLOUS-PAOLI <https://github.com/Magali-D>
+- Ken KOBLAVI-DIBI - <https://github.com/ViewKen1>
+- Clarisse ROUYERE - <https://github.com/ClarisseRouyere>
+- Bruno GOMES PEIXOTO - <https://github.com/SeRiice>
+- Mohamed-Amine FADHLAOUI - <https://github.com/MhaFADH>
