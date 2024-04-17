@@ -282,6 +282,7 @@ Remplissez le message correctement, il faut qu'on comprenne ce que vous proposez
 Une fois réalisée, vous pouvez observer sur le projet original toutes les proposition de pull request, et leur état.
 
 ## 8. Élèves ayant validé ce cours d'initiation
+Rami Hsasna - https://github.com/RamiHsasna
 Rohat GEZER - https://github.com/Rohat954/
 Sylvain Peigney - https://github.com/volpeo
 Gillian Perard - https://github.com/GillianPerard
